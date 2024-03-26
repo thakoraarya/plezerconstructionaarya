@@ -1,5 +1,5 @@
 "use client"
-import Brochure from "@/Assets/pdf/HappyHomesBrochure.pdf"
+import Brochure from "@/assets/pdf/HappyHomesBrochure.pdf"
 import { useState } from "react";
 const BrochureComponent = () => {
     const [isDownloading, setIsDownloading] = useState(false);
