@@ -5,7 +5,7 @@ import { HappyHomesMap } from "@/components/ProjectComponent/MapComponent";
 import BrochureComponent from "@/components/Brochure/BrochureComponent";
 const Project = () => {
   return (
-    <section className="flex flex-col gap-3">
+    <section className="flex flex-col gap-3 ">
       <Header active={"HappyHomes"} />
       <ProjectComponent />
       <BrochureComponent />

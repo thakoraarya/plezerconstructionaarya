@@ -33,7 +33,7 @@ const ProjectComponent = () => {
     <section>
       {/* <SliderComponent slides={happy_homes_slides} img={true} /> */}
       <div className="w-full">
-        <p className="text-4xl tracking-tight font-extrabold text-primary text-center py-8 border-b-2 border-gray-200">Check Out Happy Homes:</p>
+        <p className="text-4xl tracking-tight font-extrabold text-primary text-center py-8 border-b-2 border-gray-200">Check Out Happy Homes</p>
         <div className="mt-4 flex flex-col justify-center w-full overflow-hidden gap-4">
           <div className="flex justify-center items-center h-fit">
             <HTMLFlipBook ref={book} minHeight={250} minWidth={250} width={382} height={382} size="stretch" drawShadow mobileScrollSupport onFlip={updatePageCount} flippingTime={3000} className="flex justify-center items-center w-fit h-fit">
@@ -42,7 +42,7 @@ const ProjectComponent = () => {
           </div>
           <div className="w-full flex justify-around gap-3 items-center py-2">
             <button className={`${flipButtonStyle}`} onClick={() => book.current.pageFlip().flipPrev()}>Previous Page</button>
-            <p className="text-base md:text-2xl">{currentPage + 1} of {totalPages}</p>
+            <p id="downloadBrochure" className="text-base md:text-2xl">{currentPage + 1} of {totalPages}</p>
             <button className={`${flipButtonStyle}`} onClick={() => book.current.pageFlip().flipNext()}>Next Page</button>
           </div>
         </div>
