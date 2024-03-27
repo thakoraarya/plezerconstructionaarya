@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   return (
     <section className="flex flex-col items-center gap-3 m-auto">
-      <SliderComponent slides={hero_section_slides} img={true} />
+      <SliderComponent slides={hero_section_slides} img={false} />
       <div className='w-full h-fit flex md:flex-row flex-col justify-around items-center md:m-16 gap-x-8'>
         <div className="flex flex-col justify-start gap-3">
           {heading1}
