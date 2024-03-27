@@ -20,14 +20,12 @@ const BrochureComponent = () => {
     };
     return (
 
-        // <div className="flex justify-around items-center m-5 p-4">
-        //     <div className="px-4 py-2 bg-primary rounded-lg hover:scale-105 transform ease-in-out duration-300 text-white text-3xl">
-        //         <button onClick={handleClick}>Download Brochure</button>
-        //     </div>
-        // </div>
-        <>
-        </>
-
+        <div className="flex justify-around items-center m-5 p-4">
+            <div className="px-4 py-2 bg-primary rounded-lg hover:scale-105 transform ease-in-out duration-300 text-white text-3xl">
+                <button onClick={handleClick}>Download Brochure</button>
+            </div>
+        </div>
+        
     )
 };
 export default BrochureComponent;
