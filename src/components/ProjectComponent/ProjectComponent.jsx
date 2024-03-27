@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { happy_homes_slides } from "@/Data/slides";
-// import SliderComponent from "@/components/SliderComponent/SliderComponent";
+import SliderComponent from "@/components/SliderComponent/SliderComponent";
 import HTMLFlipBook from "react-pageflip";
 import { useRef, useState } from "react";
 const ProjectComponent = () => {
@@ -31,7 +31,7 @@ const ProjectComponent = () => {
 
   return (
     <section>
-      {/* <SliderComponent slides={happy_homes_slides} img={true} /> */}
+      <SliderComponent slides={happy_homes_slides} img={true} />
       <div className="w-full">
         <p className="text-4xl tracking-tight font-extrabold text-primary text-center py-8 border-b-2 border-gray-200">Check Out Happy Homes</p>
         <div className="mt-4 flex flex-col justify-center w-full overflow-hidden gap-4">

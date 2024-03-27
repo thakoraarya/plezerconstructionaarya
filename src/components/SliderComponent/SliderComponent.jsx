@@ -21,10 +21,11 @@ const SliderComponent = ({ slides, img }) => {
       },
     ],
   };
+
   const renderSlides = () => {
     return slides.map((slide, index) => (
-      <div className="carousel-slide" key={index}>
-        <Image className='carousel-image p-4 md:w-[500px]' src={slide.imageSrc} alt={slide.alt} />
+      <div className="carousel-slide focus:outline-none outline-none hover:scale-105 transition duration-300 ease-in-out" key={index}>
+        <Image className='carousel-image p-4 focus:outline-none outline-none md:w-[500px]' src={slide.imageSrc} alt={slide.alt} />
       </div>
     ));
   };
@@ -50,10 +51,9 @@ const SliderComponent = ({ slides, img }) => {
   };
   return (
     <div className='w-full justify-center'>
-      {/* <Slider {...settings} className="carousel border border-black">
-        {img === true ? <renderSlides /> : <renderSlides2 />}
-      </Slider> */}
-      <p className="text-9xl">hehehehehe</p>
+      <Slider {...settings} className="carousel">
+        {img === true ? renderSlides() : renderSlides2()}
+      </Slider>
     </div>
   )
 }
