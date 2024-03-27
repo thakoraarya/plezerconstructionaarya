@@ -4,14 +4,14 @@ const nextConfig = {
 
   images: { unoptimized: true },
 
-  webpack: (config, { isServer }) => {
-    config.module.rules.push({
-      test: /\.(pdf)$/,
-      type: 'asset/resource',
-    });
+  // webpack: (config, { isServer }) => {
+  //   config.module.rules.push({
+  //     test: /\.(pdf)$/,
+  //     type: 'asset/resource',
+  //   });
 
-    return config;
-  },
+  //   return config;
+  // },
 }
 
 module.exports = nextConfig

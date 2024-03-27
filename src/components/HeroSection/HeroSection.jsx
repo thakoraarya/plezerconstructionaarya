@@ -3,7 +3,7 @@ import { heading1, heading2 } from "./Headings.jsx";
 import { hero_section_slides } from "@/Data/slides.js";
 import Testimonials from "../Testimonials/Testimonials.jsx";
 import { Hero1 } from "@/assets/assets.js";
-import SliderComponent from '../SliderComponent/SliderComponent.jsx';
+// import SliderComponent from '../SliderComponent/SliderComponent.jsx';
 import Link from "next/link.js";
 
 const HeroSection = () => {

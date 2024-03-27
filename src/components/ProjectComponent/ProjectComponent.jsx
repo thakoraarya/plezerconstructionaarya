@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { happy_homes_slides } from "@/Data/slides";
-import SliderComponent from "@/components/SliderComponent/SliderComponent";
+// import SliderComponent from "@/components/SliderComponent/SliderComponent";
 import HTMLFlipBook from "react-pageflip";
 import { useRef, useState } from "react";
 const ProjectComponent = () => {

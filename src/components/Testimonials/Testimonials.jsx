@@ -1,5 +1,5 @@
 import { testimonials } from "@/Data/testimonials";
-import SliderComponent from "../SliderComponent/SliderComponent";
+// import SliderComponent from "../SliderComponent/SliderComponent";
 const Testimonials = () => {
 
     return (
