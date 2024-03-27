@@ -2,8 +2,8 @@ import Image from "next/image";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { BsPerson } from "react-icons/bs"; // Add missing import for react-icons
 
-import { BsPerson } from "react-icons/bs";
 const SliderComponent = ({ slides, img }) => {
   const settings = {
     autoplay: true,
@@ -50,9 +50,10 @@ const SliderComponent = ({ slides, img }) => {
   };
   return (
     <div className='w-full justify-center'>
-      <Slider {...settings} className="carousel">
-        {img === true ? renderSlides() : renderSlides2()}
-      </Slider>
+      {/* <Slider {...settings} className="carousel border border-black">
+        {img === true ? <renderSlides /> : <renderSlides2 />}
+      </Slider> */}
+      <p className="text-9xl">hehehehehe</p>
     </div>
   )
 }
